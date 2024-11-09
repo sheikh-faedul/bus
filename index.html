@@ -4,69 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bus-ticke</title>
+    <!-- daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>
+     <header class="flex justify-around">
+        <h1 class="text-3xl font-semibold">
             Bus-Ticketing
         </h1>
-        <div>
-            <h5>BUS</h5>
-            <img src="images/bus-icon.png" alt="" srcset="">
+        <div class="flex border-4 border-green-300 rounded bg-green-300">
+            <h5 class="text-green-700">BUS</h5>
+            <img class="w-full" src="images/bus-icon.png" alt="" srcset="">
         </div>
     </header>
     <main>
         <!-- banner section -->
         <section>
-             <div>
-                <h1>
+             <div class="bg-[url(images/banner.png)] bg-center h-screen bg-no-repeat flex flex-col items-center justify-center gap-4">
+                <h1 class="text-slate-100 text-3xl font-semibold">
                     End-to-End Travel with
                 </h1>
-                <p>
+                <p class="text-slate-100 text-center">
                     Yes,you can run unit tests and view the results directly within the app.
                      <br>
                     The integrated testing features allow for a stremline
                 </p>
-                <h1>P-Poribahon</h1>
+                <h1 class="text-green-500 text-3xl font-semibold">P-Poribahon</h1>
+                <button class="btn btn-success">Buy Ticket</button>
              </div>
         </section>
-
+        
 
         <!-- offer section -->
 
         <section>
-            <h1>
+            <h1 class="text-3xl font-semibold text-center">
                 Best offer for you 
             </h1>
-            <div>
-                <div>
+            <div class="flex gap-4 mt-6 justify-around">
+                <div class="bg-yellow-400 rounded-md flex items-around p-4">
                     <div>
-                        <h1>15% OFF</h1>
+                        <h1 class="text-3xl font-bold">15% OFF</h1>
                         <p>on youtr next purches
                             <br>
                             use by January 2025
                         </p>
                     </div>
-                    <div>
-                        <h2>NEW15</h2>
+                    <div class="ps-9">
+                        <h2 class="text-xl font-bold">NEW15</h2>
                         <p>Coupon Code</p>
                     </div>
                 </div>
-                <div>
+                <div class="bg-red-400 rounded-md flex items-around p-4">
                     <div>
-                        <h1>20% OFF</h1>
+                        <h1 class="text-3xl font-bold">20% OFF</h1>
                         <p>
                             on your next purches <br>
                             use by january 2025
                         </p>
                     </div>
-                    <div>
-                        <h2>Couple 20</h2>
+                    <div class="ps-9">
+                        <h2 class="text-xl font-semibold">Couple 20</h2>
                         <p>Coupon Code </p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="flex justify-center mt-6">
                 <button>see all offers</button>
             </div>
         </section>
@@ -74,218 +78,223 @@
         <!-- offers section end -->
 
         <!-- seat section start -->
-         <section>
-            <h1>P.Paribahan</h1>
-            <p>
+        <section>
+          <h1 class="text-3xl font-semibold mt-6 text-center">P.Paribahan</h1>
+            <p class="text-center mb-8">
                 Yes,you can run unit tests and view the results directly within the app.The integrated <br>
                 testing festures allow for a streamline.
             </p>
-            <div>
+            <div class="flex justify-around items-center mb-5">
                 <div>
-                    <div>
-                        <div>
+                    <div class="flex justify-between">
+                        <div class="flex">
                             <img src="images/bus-logo.png" alt="" srcset="">
-                            <div>
-                                <h1>
+                            <div class="ms-3">
+                                <h1 class="text-2xl font-semibold">
                                     Greenline Paribahan
                                 </h1>
                                 <p>Coach-009-WEb ! AC_Bussiness</p>
                             </div>
                         </div>
-                        <img src="images/seat-green.png" alt="" srcset="">
-                        <h5><span>40</span>seat left</h5>
+                        <div class="flex items-center">
+                            <img src="images/seat-green.png" alt="" srcset="">
+                            <h5 ><span class="bg-green-500">40</span>seat left</h5>
+                        </div>
                     </div>
+                
+                <div class="flex justify-between">
+                    <h5>route</h5>
+                    <h5>Dhaka-Sylhet</h5>
                 </div>
-                <div>
-                    <h2>route</h2>
-                    <h2>Dhaka-Sylhet</h2>
-                </div>
-                <div>
+                <div class="flex justify-between">
                     <h5>Departure Time</h5>
                     <h5>9:00 PM</h5>
                 </div>
+                <div class="flex justify-between">
+                    <h5 class="border-2 bg-gray-300 rounded-lg ">Boarding Point - Laxmipur</h5>
+                    <h5 class="border-2 bg-gray-300 rounded-lg ms-3">Dropping Point - Bogura</h5>
+                    <h5 class="border-2 bg-gray-300 rounded-lg ms-3">Est. Time - 11 Hour</h5>
+                </div>
+              </div>
                 <div>
-                    <h5>Boarding Point - Laxmipur</h5>
-                    <h5>Dropping Point - Bogura</h5>
-                    <h5>Est. Time - 11 Hour</h5>
+                <img src="images/fare.png" alt="" srcset="">
+                <h1 class="text-2xl font-semibold"><span>550</span>Taka</h1>
+                 <p>Per seat</p>
                 </div>
             </div>
-            <div>
-                <img src="images/fare.png" alt="" srcset="">
-                <h1><span>550</span>Taka</h1>
-                <p>Per seat</p>
-            </div>
-         </section>
+         
 
          <!-- seat select part start -->
-          <div>
-            <div>
-                <div>
-                    <div>
+          <div class="flex justify-center">
+            <div class="flex w-6/12 flex-col justify-around border-r-4 border-dotted border-green-300">
+                <div class="flex h-20 justify-around">
+                    <div class="flex">
                         <img src="images/seat-gray.png" alt="" srcset="">
                         <h4>Available seat</h4>
                     </div>
-                    <div>
+                    <div class="flex">
                         <img src="images/seat-green-filled.png" alt="" srcset="">
                         <h4>Selected seat</h4>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div class="allseat">
+                <div class="text-center">
+                    <div class="grid gap-4 grid-cols-4">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>A1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>A2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>A3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>A4</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>B1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>B2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>B3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>B4</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>C1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>C2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>C3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>C4</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>D1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>D2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>D3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>D4</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>E1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>E2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>E3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>E4</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>F1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>F2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>F3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>F4</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>G1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>G2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>G3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>G4</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>H1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>H2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>H3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>H4</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>I1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>I2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>I3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>I4</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>J1</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>J2</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>J3</h4>
                         </div>
-                        <div class="allseat">
+                        <div class="allseat border-4 w-6/12 rounded-md">
                             <h4>J4</h4>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <h5>seat <span>0</span></h5>
+            <div class="p-4">
+                <div class="flex justify-around">
+                    <h5>seat <span class="bg-green-500">0</span></h5>
                     <h5>class</h5>
                     <h5>pricce</h5>
                 </div>
-                <div></div>
+                <div class="flex justify-around"></div>
                 <hr>
-                <div>
+                <div class="flex justify-around mt-4">
                     <h3>Total Price</h3>
                     <h3>BDT <span>0</span></h3>
                 </div>
-                <div>
-                    <input type="text">
+                <div class="mt-4">
+                    <input type="text" placeholder="Have any coupne">
                     <button type="button">Apply</button>
                 </div>
-                <div>
+                <div class="flex justify-around mt-4">
                     <h2>Grand Total</h2>
                     <h2>BDT <span>0</span></h2>
                 </div>
-                <div>
+                <div class="mt-4">
                     <h3>passenger Name*</h3>
                     <input type="text" name="" id="" placeholder="Enter your name">
-                    <h3>Phone Number*</h3>
+                    <h3 class="mt-2">Phone Number*</h3>
                     <input type="number" name="" id="" placeholder="Enter your phone number">
-                    <h3>Email</h3>
+                    <h3 class="mt-2">Email</h3>
                     <input type="email" name="" id="" placeholder="Enter your email">
                 </div>
-                <button>Next</button>
+                <button class="btn btn-wide bg-green-500">Next</button>
             </div>
           </div>
+        </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
